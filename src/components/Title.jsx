@@ -4,7 +4,7 @@ import "@fontsource/rubik-mono-one"
 export function Title() {
 
 
-	const letters = "AMROIZENSAMROIZENSAMROIZEN";
+	const letters = "AM.OIZE.S.MROIZEN.AMR.IZ.N";
 	const title = "SAMROIZEN.COM";
 
 	let interval = null;

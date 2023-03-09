@@ -1,10 +1,43 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import { MantineProvider } from '@mantine/core'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import './index.css'
+import "@fontsource/fira-code";
+
+import {
+	BrowserRouter,
+	Routes,
+	Route,
+	Link
+} from "react-router-dom";
+
+import {App} from './App.jsx'
+
+const mantineSettings = {
+	colorScheme: 'dark',
+	fontFamily: 'Fira Code',
+}
+
+const docroot = ReactDOM.createRoot(document.getElementById('root'))
+
+const RouterElement = () => {
+	return(
+		
+		<BrowserRouter><Routes>
+			
+			<Route path="/" element={<App />}>
+			
+				</Route>
+		
+			</Routes></BrowserRouter>
+	)
+}
+
+docroot.render(
+	<React.StrictMode><MantineProvider theme={mantineSettings}>
+
+		<RouterElement />
+
+	</MantineProvider></React.StrictMode>
 )
