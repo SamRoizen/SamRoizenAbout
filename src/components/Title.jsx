@@ -34,7 +34,7 @@ export function Title() {
 				clearInterval(interval);
 			}
 			
-			iteration += 1 / 5;
+			iteration += 1 / 3.5;
 		}, 30);
 		
 	}
