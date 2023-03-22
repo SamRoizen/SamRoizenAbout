@@ -5,7 +5,7 @@ export function Title() {
 
 
 	const letters = "AM.OIZE.S.MROIZEN.AMR.IZ.N";
-	const title = "SAMROIZEN.COM";
+	const title = "SAMROIZEN";
 
 	let interval = null;
 
